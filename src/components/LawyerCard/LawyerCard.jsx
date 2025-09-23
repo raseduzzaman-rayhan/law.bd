@@ -4,7 +4,7 @@ import { GoDotFill } from 'react-icons/go';
 import { Link } from 'react-router';
 
 const LawyerCard = ({ lawyer }) => {
-    const { name, specialty, licenseNo, experience, available, image } = lawyer;
+    const { id, name, specialty, licenseNo, experience, available, image } = lawyer;
 
     return (
         <div className="flex flex-col lg:flex-row items-center bg-white rounded-2xl p-6 lg:w-[560px] mx-auto border-2 border-green-100 hover:border-green-300 gap-8 overflow-hidden hover:shadow-lg transition duration-300">
@@ -45,11 +45,11 @@ const LawyerCard = ({ lawyer }) => {
 
                 {/* Button */}
                 <div className="mt-4">
- 
-                    <button className="px-6 py-2 text-green-600 border border-green-200 rounded-full font-medium hover:bg-green-600 hover:text-white transition duration-300 btn-wide">
-                        View Details
-                    </button>
-        
+                    <Link to={`/lawyerDetails/${id}`}>
+                        <button className="px-6 py-2 text-green-600 border border-green-200 rounded-full font-medium hover:bg-green-600 hover:text-white transition duration-300 btn-wide">
+                            View Details
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>

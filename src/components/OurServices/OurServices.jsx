@@ -11,7 +11,7 @@ const OurServices = () => {
             ([entry]) => {
                 setInView(entry.isIntersecting);
             },
-            { threshold: 0.6 }
+            { threshold: 0.7 }
         );
 
         if (sectionRef.current) observer.observe(sectionRef.current);
@@ -41,7 +41,7 @@ const OurServices = () => {
                             <FaUserTie size={50} className="text-purple-600" />
                         </div>
                         <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-1">
-                            {inView && <CountUp end={199} duration={2} />}+
+                            {inView ? <CountUp end={199} duration={2} />: 199}+
                         </h3>
                         <p className="text-gray-500 text-sm md:text-base">Total Lawyers</p>
                     </div>
@@ -52,7 +52,7 @@ const OurServices = () => {
                             <FaStar size={50} className="text-yellow-500" />
                         </div>
                         <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-1">
-                            {inView && <CountUp end={450} duration={2.5} />}+
+                            {inView ? <CountUp end={450} duration={2.5} /> : 400}+
                         </h3>
                         <p className="text-gray-500 text-sm md:text-base">Total Reviews</p>
                     </div>
@@ -62,9 +62,11 @@ const OurServices = () => {
                         <div className="p-4 rounded-full mb-4">
                             <FaGavel size={50} className="text-yellow-500" />
                         </div>
+
                         <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-1">
-                            {inView && <CountUp end={1900} duration={3} />}+
+                            {inView ? <CountUp key="cases" end={1900} duration={3} /> : 1900}+
                         </h3>
+
                         <p className="text-gray-500 text-sm md:text-base">Cases Initiated</p>
                     </div>
 
@@ -74,7 +76,7 @@ const OurServices = () => {
                             <FaUsers size={50} className="text-pink-500" />
                         </div>
                         <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-1">
-                            {inView && <CountUp end={300} duration={2.2} />}+
+                            {inView ? <CountUp end={300} duration={2.2} /> : 300}+
                         </h3>
                         <p className="text-gray-500 text-sm md:text-base">Total Staffs</p>
                     </div>
