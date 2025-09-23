@@ -1,0 +1,194 @@
+[
+    {
+        "id": 1,
+        "name": "Adv. Mahmud Hossain",
+        "specialty": "Criminal Law",
+        "licenseNo": "BD-L-10234",
+        "experience": "12+ Years",
+        "availabilityDay": {
+            "day1": "Monday",
+            "day2": "Tuesday",
+            "day3": "Thursday"
+        },
+        "available": true,
+        "fee": 2500,
+        "consultationFee": 1200,
+        "image": "https://i.ibb.co.com/sp4dBnQy/Arif-Rahman.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Adv. Imran Ahmed",
+        "specialty": "Corporate Law",
+        "licenseNo": "BD-T-30567",
+        "experience": "15+ Years",
+        "availabilityDay": {
+            "day1": "Sunday",
+            "day2": "Tuesday",
+            "day3": "Thursday"
+        },
+        "available": false,
+        "fee": 5000,
+        "consultationFee": 2500,
+        "image": "https://i.ibb.co.com/gZ4K85MR/Abhijit-Ghosh.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Adv. Rupa Chowdhury",
+        "specialty": "Family Law",
+        "licenseNo": "BD-L-10234",
+        "experience": "8+ Years",
+        "availabilityDay": {
+            "day1": "Saturday",
+            "day2": "Monday",
+            "day3": "Wednesday"
+        },
+        "available": true,
+        "fee": 2000,
+        "consultationFee": 1000,
+        "image": "https://i.ibb.co.com/hxzp3fkd/2476604.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Adv. Shiuli Dutta",
+        "specialty": "Immigration Law",
+        "licenseNo": "BD-L-45678",
+        "experience": "10+ Years",
+        "availabilityDay": {
+            "day1": "Monday",
+            "day2": "Wednesday",
+            "day3": "Friday"
+        },
+        "available": true,
+        "fee": 3500,
+        "consultationFee": 1500,
+        "image": "https://i.ibb.co.com/bjF2X1V1/Shiuli-Dutta.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Adv. Jahidul Karim",
+        "specialty": "Civil Litigation",
+        "licenseNo": "BD-L-56789",
+        "experience": "7+ Years",
+        "availabilityDay": {
+            "day1": "Wednesday",
+            "day2": "Thursday",
+            "day3": "Saturday"
+        },
+        "available": true,
+        "fee": 1800,
+        "consultationFee": 900,
+        "image": "https://i.ibb.co.com/mrTvXstG/Farhan-Ahmed.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Adv. Rakib Hasan",
+        "specialty": "Tax Law",
+        "licenseNo": "BD-O-78901",
+        "experience": "9+ Years",
+        "availabilityDay": {
+            "day1": "Monday",
+            "day2": "Wednesday",
+            "day3": "Thursday"
+        },
+        "available": true,
+        "fee": 3000,
+        "consultationFee": 1500,
+        "image": "https://i.ibb.co.com/DP7B6zTz/Rahat-Hossain.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Adv. Trisha-Rahman",
+        "specialty": "Intellectual Property",
+        "licenseNo": "BD-Z-67890",
+        "experience": "11+ Years",
+        "availabilityDay": {
+            "day1": "Tuesday",
+            "day2": "Thursday",
+            "day3": "Friday"
+        },
+        "available": false,
+        "fee": 4000,
+        "consultationFee": 2000,
+        "image": "https://i.ibb.co.com/ch0nwY3T/Trisha-Rahman.webp"
+    },
+    {
+        "id": 8,
+        "name": "Adv. Nandita Chakraborty",
+        "specialty": "Labor Law",
+        "licenseNo": "BD-K-89012",
+        "experience": "6+ Years",
+        "availabilityDay": {
+            "day1": "Saturday",
+            "day2": "Sunday",
+            "day3": "Tuesday"
+        },
+        "available": true,
+        "fee": 2200,
+        "consultationFee": 1100,
+        "image": "https://i.ibb.co.com/Zz8y4M5W/Nandita-Chakraborty.webp"
+    },
+    {
+        "id": 9,
+        "name": "Adv. Kamrul Islam",
+        "specialty": "Environmental Law",
+        "licenseNo": "BD-R-90123",
+        "experience": "14+ Years",
+        "availabilityDay": {
+            "day1": "Sunday",
+            "day2": "Tuesday",
+            "day3": "Thursday"
+        },
+        "available": false,
+        "fee": 4500,
+        "consultationFee": 2000,
+        "image": "https://i.ibb.co.com/Tq0xMb98/Kamrul-Islam.png"
+    },
+    {
+        "id": 11,
+        "name": "Adv. Arif Mahmud",
+        "specialty": "Constitutional Law",
+        "licenseNo": "Bd-L-23456",
+        "experience": "16+ Years",
+        "availabilityDay": {
+            "day1": "Tuesday",
+            "day2": "Thursday",
+            "day3": "Friday"
+        },
+        "available": true,
+        "fee": 6000,
+        "consultationFee": 3000,
+        "image": "https://i.ibb.co.com/hRhNwpHw/arif.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Adv. Sayema Islam",
+        "specialty": "Real Estate Law",
+        "licenseNo": "BD-S-12345",
+        "experience": "10+ Years",
+        "availabilityDay": {
+            "day1": "Monday",
+            "day2": "Wednesday",
+            "day3": "Saturday"
+        },
+        "available": true,
+        "fee": 2800,
+        "consultationFee": 1300,
+        "image": "https://i.ibb.co.com/fYj4Lw6R/Sayema-Islam.webp"
+    },
+    {
+        "id": 12,
+        "name": "Adv. Oishi Sengupta",
+        "specialty": "Human Rights Law",
+        "licenseNo": "BD-L-34567",
+        "experience": "13+ Years",
+        "availabilityDay": {
+            "day1": "Saturday",
+            "day2": "Monday",
+            "day3": "Wednesday"
+        },
+        "available": true,
+        "fee": 3200,
+        "consultationFee": 1500,
+        "image": "https://i.ibb.co.com/dJBgBbFK/Oishi-Sengupta.jpg"
+    }
+]

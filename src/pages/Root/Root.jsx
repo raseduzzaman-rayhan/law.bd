@@ -7,16 +7,16 @@ const Root = () => {
 
 
     const links = <>
-        <NavLink to="/" className="mr-1 px-3 py-2 
+        <NavLink to="/" className="mr-1 md:px-3 md:py-2 
              hover:bg-green-700 hover:text-white text-sm md:text-lg font-normal rounded-2xl lg:hover:bg-transparent lg:hover:text-inherit">Home</NavLink>
 
-        <NavLink to="/mybookings" className="mr-1 px-3 py-2 
+        <NavLink to="/mybookings" className="mr-1 md:px-3 md:py-2 
              hover:bg-green-700 hover:text-white text-sm md:text-lg font-normal rounded-2xl lg:hover:bg-transparent lg:hover:text-inherit">My Bookings</NavLink>
 
-        <NavLink to="/blogs" className="mr-1 px-3 py-2 
+        <NavLink to="/blogs" className="mr-1 md:px-3 md:py-2 
              hover:bg-green-700 hover:text-white text-sm md:text-lg font-normal rounded-2xl lg:hover:bg-transparent lg:hover:text-inherit">Blogs</NavLink>
 
-        <NavLink to="/*" className="mr-1 px-3 py-2 
+        <NavLink to="/*" className="mr-1 md:px-3 md:py-2 
              hover:bg-green-700 hover:text-white text-sm md:text-lg font-normal rounded-2xl lg:hover:bg-transparent lg:hover:text-inherit">Contact Us</NavLink>
 
     </>
