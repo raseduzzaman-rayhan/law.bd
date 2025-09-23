@@ -11,12 +11,17 @@
 
 /* Hind Siliguri Font Class*/
 .hind-siliguri {
-    font-family: "Hind Siliguri", sans-serif;
-    font-style: normal;
+  font-family: "Hind Siliguri", sans-serif;
+  font-style: normal;
 }
 
 /* Poppins Font Class */
 .poppins {
   font-family: "Poppins", sans-serif;
   font-style: normal;
+}
+
+.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
