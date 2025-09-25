@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 const getBookedAppointment = () => {
     const bookedLawyerSTR = localStorage.getItem("bookedList");
     if (bookedLawyerSTR) {
@@ -8,26 +9,25 @@ const getBookedAppointment = () => {
     }
 };
 
-const addToBookedDB = (id) => {
+const addToBookedDB = (id, name) => {
     const bookedLawyerData = getBookedAppointment();
     const stringId = String(id);
 
     if (bookedLawyerData.includes(stringId)) {
-        alert("Already Booked!");
+        toast.warning(`You have already booked ${name}!`);
     } else {
         bookedLawyerData.push(stringId);
         localStorage.setItem("bookedList", JSON.stringify(bookedLawyerData));
-        alert("You booked this lawyer!");
-    } 
+        toast.success(`Successfully booked ${name}!`);
+    }
 };
 
-const removeBookedDB = (id) => {
+const removeBookedDB = (id, name) => {
     const bookedLawyerData = getBookedAppointment();
     const stringId = String(id);
     const updated = bookedLawyerData.filter(item => item !== stringId);
     localStorage.setItem("bookedList", JSON.stringify(updated));
-    alert("Removed Booking done!")
+    toast.info(`Booking removed for ${name}.`);
 };
-
 
 export { addToBookedDB, getBookedAppointment, removeBookedDB };

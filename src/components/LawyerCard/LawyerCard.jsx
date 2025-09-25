@@ -10,7 +10,7 @@ const LawyerCard = ({ lawyer }) => {
         <div className="flex flex-col lg:flex-row items-center bg-white rounded-2xl p-6 lg:w-[560px] mx-auto border-2 border-green-100 hover:border-green-300 gap-8 overflow-hidden hover:shadow-lg transition duration-300 poppins">
 
             {/* Image */}
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0"> 
                 {image ? (
                     <img src={image} alt={name} className="h-44 w-44 rounded-lg object-cover" />
                 ) : (

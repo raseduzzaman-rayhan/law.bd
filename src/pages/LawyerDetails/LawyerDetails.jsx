@@ -3,6 +3,7 @@ import { FaRegRegistered, FaUserCircle } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
 import { useLoaderData, useParams } from "react-router";
 import { addToBookedDB } from "../../utility/addRemoveToDB";
+import { ToastContainer } from "react-toastify";
 
 
 const LawyerDetails = () => {
@@ -16,8 +17,8 @@ const LawyerDetails = () => {
     const { name, specialty, licenseNo, experience, available, image, consultationFee, availabilityDay, fee } = singleLawyer;
 
 
-    const handleAppointment = id => {
-        addToBookedDB(id);
+    const handleAppointment = (id, name) => {
+        addToBookedDB(id, name);
     }
     return (
         <div className="max-w-6xl mx-auto p-6 space-y-6">
@@ -92,7 +93,7 @@ const LawyerDetails = () => {
 
                 {available ? (
                     <button
-                        onClick={() => handleAppointment(id)}
+                        onClick={() => handleAppointment(id, name)}
                         className="w-full bg-green-600 text-white py-3 rounded-full font-semibold hover:bg-green-700 px-8 shadow-lg transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
                         Book Appointment Now
                     </button>
@@ -103,7 +104,7 @@ const LawyerDetails = () => {
                     </button>
                 )}
             </div>
-
+            <ToastContainer />
         </div>
     );
 };

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import { getBookedAppointment, removeBookedDB } from '../../utility/addRemoveToDB';
 import CancelAppointment from '../../components/CancelAppointment/CancelAppointment';
+import { ToastContainer } from 'react-toastify';
 
 const MyBookings = () => {
     const [bookedList, setBookedList] = useState([]);
@@ -46,7 +47,7 @@ const MyBookings = () => {
                     ></CancelAppointment>)
                 }
             </div>
-
+            <ToastContainer />
         </div>
     );
 };
