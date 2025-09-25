@@ -7,7 +7,7 @@ const LawyerCard = ({ lawyer }) => {
     const { id, name, specialty, licenseNo, experience, available, image } = lawyer;
 
     return (
-        <div className="flex flex-col lg:flex-row items-center bg-white rounded-2xl p-6 lg:w-[560px] mx-auto border-2 border-green-100 hover:border-green-300 gap-8 overflow-hidden hover:shadow-lg transition duration-300">
+        <div className="flex flex-col lg:flex-row items-center bg-white rounded-2xl p-6 lg:w-[560px] mx-auto border-2 border-green-100 hover:border-green-300 gap-8 overflow-hidden hover:shadow-lg transition duration-300 poppins">
 
             {/* Image */}
             <div className="flex-shrink-0">

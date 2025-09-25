@@ -5,7 +5,7 @@ import banner from '../../assets/banner.png'
 const Banner = () => {
     return (
         <div
-            className="relative w-full h-[480px] md:h-[600px] bg-cover bg-center flex items-center"
+            className="relative w-full h-[480px] md:h-[600px] bg-cover bg-center flex items-center poppins"
             style={{
                 backgroundImage: `url("${banner}")`,
             }}

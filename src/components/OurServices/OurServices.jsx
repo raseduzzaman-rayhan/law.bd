@@ -22,7 +22,7 @@ const OurServices = () => {
     }, []);
 
     return (
-        <section className="py-16 md:py-24" ref={sectionRef}>
+        <section className="py-16 md:py-24 poppins" ref={sectionRef}>
             <div className="container mx-auto px-4 md:px-6 lg:px-8">
                 <div className="text-center mb-12 md:mb-16">
                     <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
@@ -41,7 +41,7 @@ const OurServices = () => {
                             <FaUserTie size={50} className="text-purple-600" />
                         </div>
                         <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-1">
-                            {inView ? <CountUp end={199} duration={2} />: 199}+
+                            {inView ? <CountUp end={199} duration={2} /> : 199}+
                         </h3>
                         <p className="text-gray-500 text-sm md:text-base">Total Lawyers</p>
                     </div>

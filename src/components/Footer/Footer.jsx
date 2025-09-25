@@ -5,7 +5,7 @@ import { BsTwitterX } from 'react-icons/bs';
 
 const Footer = ({ links }) => {
     return (
-        <footer className="bg-black text-white p-10">
+        <footer className="bg-black text-white p-10 poppins">
 
             {/* Logo and Name */}
             <div className="flex items-center justify-center gap-2 mb-4">

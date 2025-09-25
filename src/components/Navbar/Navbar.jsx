@@ -10,7 +10,7 @@ const Navbar = ({ links }) => {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="navbar bg-gray-50 hover:shadow-md px-5">
+        <nav className="navbar bg-gray-50 hover:shadow-md px-5 poppins">
             <div className="navbar-start">
                 <span className="md:hidden lg:hidden" onClick={() => setOpen(!open)}>
                     {
