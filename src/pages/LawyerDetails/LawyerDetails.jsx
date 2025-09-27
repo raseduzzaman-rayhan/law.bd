@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaRegRegistered, FaUserCircle } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
 import { useLoaderData, useParams } from "react-router";
-import { addToBookedDB } from "../../utility/addRemoveToDB";
-import { ToastContainer } from "react-toastify";
+import { AppointmentContext } from "../Root/Root";
+
 
 
 const LawyerDetails = () => {
+    const { handleAppointment } = useContext(AppointmentContext)
 
     const { id } = useParams();
     const lawyerId = parseInt(id);
@@ -17,9 +18,6 @@ const LawyerDetails = () => {
     const { name, specialty, licenseNo, experience, available, image, consultationFee, availabilityDay, fee } = singleLawyer;
 
 
-    const handleAppointment = (id, name) => {
-        addToBookedDB(id, name);
-    }
     return (
         <div className="max-w-6xl mx-auto p-6 space-y-6">
             {/* Header */}
@@ -104,7 +102,7 @@ const LawyerDetails = () => {
                     </button>
                 )}
             </div>
-            <ToastContainer />
+       
         </div>
     );
 };

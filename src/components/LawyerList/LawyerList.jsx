@@ -1,12 +1,10 @@
-import React, { use, useState } from 'react';
+import React, { useContext } from 'react';
 import LawyerCard from '../LawyerCard/LawyerCard';
+import { HomeContext } from '../../pages/Home/Home';
 
-const LawyerList = ({ lawyersListPromise }) => {
-    const lawyers = use(lawyersListPromise);
-    const [showAll, setShowAll] = useState(false);
+const LawyerList = () => {
 
-    // first 6 lawyers showing :
-    const visibleLawyers = showAll ? lawyers : lawyers.slice(0, 6);
+    const { visibleLawyers, showAll, setShowAll } = useContext(HomeContext)
 
     return (
         <div className="font-sans antialiased bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 poppins">

@@ -1,9 +1,7 @@
 import React from 'react';
 import { GrUserExpert } from 'react-icons/gr';
-import { RiDeleteBin2Line } from 'react-icons/ri';
 
-
-const CancelAppointment = ({ singleLawyer, handleRemoveAppoinment }) => {
+const CancelAppointment = ({ singleLawyer, handleRemoveAppointment }) => {
 
     const { id, name, specialty, fee } = singleLawyer;
 
@@ -20,12 +18,9 @@ const CancelAppointment = ({ singleLawyer, handleRemoveAppoinment }) => {
                 <p className='pr-1 text-gray-600'>Appointment Fee : <span className='text-green-500'> {fee}</span> Taka</p>
             </div>
             <button
-                onClick={() => handleRemoveAppoinment(id)}
+                onClick={() => handleRemoveAppointment(id, name)}
                 className="w-full text-red-600 border-[1.5px] border-red-500 py-3 rounded-full font-semibold px-8 shadow-lg transform transition duration-300 hover:text-white hover:bg-red-600 focus:ring-red-600 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2">
-                <span className='flex justify-center items-center gap-2'>
-                    <span>Cancel Appointment </span>
-                    <RiDeleteBin2Line size={25} />
-                </span>
+                Cancel Appointment
             </button>
 
 
